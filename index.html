@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Thomas Maxim</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap" rel="stylesheet"
+    />
+
+    <link rel='stylesheet' type='text/css' media='screen' href='default.css'>
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    
+</head>
+<body>
+
+   <section class= "s1">
+       <div class="main-container">
+           <div class="greeting-wrapper"> <!--grid area-->
+           <h1>Hi, I'm Thomas Maxim</h1>
+           </div>
+
+            <div class="intro-wrapper">
+                <div class="nav-wrapper"> <!--gonna use a flex box-->
+                    <div class="dots-wrapper">
+
+                        <!--<div id="dot-1" class="browser-dot"></div>
+                        <div id="dot-2" class="browser-dot"></div>  
+                        <div id="dot-3" class="browser-dot"></div>-->
+
+                        <img id="logo" src="images/maxim.png">
+
+                     </div>
+
+                    <ul id="navigation">
+                        <li><a href="#my-form">Contact</a></li>
+                        <!--<li><a href="#">Contact</a></li>-->
+                    </ul>
+                    
+                </div>
+
+                <div class="left-column">
+                    <h3>What I can do for you?</h3>
+                    <p>I'm specialized in design and development of web 
+                    displays for small and medium business.</p>
+
+                    <h5 style="text-align: center; line-height: 0">Personalize Theme</h5>
+
+                    <div id="theme-options-wrapper"> <!--inside will create dots to change theme color-->
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div> <!--adding custom attribute data to know which opt was clicked-->
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                    </div>
+
+                    <p id="settings-note">Theme will be saved for<br>your next visit</p>
+
+                </div>
+
+                <div class="right-column">
+                    <div id="preview-shadow"> <!--to add shaddow Im wrapping it in this parent element-->
+                        <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+
+                            <img id="profile_pic" src="images/tom.jpg">
+
+                            <div id="corner-br" class="corner"></div>
+                            <div id="corner-bl" class="corner"></div>
+                        </div>
+                    </div>  
+                </div>
+
+            </div>
+       </div>
+   </section> 
+
+   <section class= "s2">
+        <div class="main-container">
+
+            <div class="about-wrapper">
+                <div class="about me">
+                    <h4>More about me</h4>
+                    <P>
+                        From 2018 I buid interesting projects and I
+                        helped few start-ups to be visible in the web.
+                    </P>
+                    <p>
+                        While I'm busy making websites,I like also
+                        to dive into the world of graphic design.
+                    </p>
+                
+
+                <hr>
+
+                <h4>TOP EXPERTISE</h4>
+
+                <p>Front-end developer with relevant skills set:<br>
+                    <a target="_blank" href="Tomasz Maksim CV.pdf">Download Resume</a></p>
+
+                    <div id="skills"> <!--wrapper-->
+                        <ul>
+                            <li>HTML & CSS</li>
+                            <li>My SQL</li>
+                            <li>Wordpress</li>
+                        </ul>
+                        <ul>
+                            <li>Adobe Illustartor and Photoshop</li>
+                            <li>Java 8</li>
+                        </ul>
+
+                    </div>
+                
+                </div>
+                <div class="social-links">
+                    <img id="social_img" src="images/hero.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class= "s1">
+        <div class="main-container">
+            <h3 style="text-align:center;">Some of my past projects</h3>
+            <div class="post-wrapper">
+                
+                <div>         <!--this fixes overflow when text in a card differs in high-->
+                    <div class="post">
+                        <img class="thumbnail" src="images/mir.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">Garage and bevertail construction</h6>
+                            <p class="post-intro">Designed built and maintained a website for
+                                a busy garage and tyres dealer.</p>
+                                <a href="miro.html">Read More</a>
+                        </div>
+                    </div>
+                </div>  
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/kriss.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">Car seat covers manufacturer</h6>
+                            <p class="post-intro">Designed, created and deplyed website with 
+                                an extensive photo gallery.
+                            </p>
+                                <a href="kriss.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/magic.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">E-Commerce</h6>
+                            <p class="post-intro">Creation of a Wordpress website with
+                                Woocommerce webshop for a events service company.</p>
+                                <a href="magic.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> 
+
+    <section class= "s2">
+        <div class="main-container">
+            <h3 style="text-align: center;">Get in touch</h3>
+
+            <!--this is copied code snippet from formspree.io/ -oni przetwarzaja od strony serwera-->
+
+            <form class="contact-form"
+            action="https://formspree.io/f/xwkwloqv"
+            method="POST" id="my-form"
+            >
+
+            <label>Name
+                <input class="input-field" type="text" name="name">
+            </label>
+
+            <label>Subject
+                <input class="input-field" type="text" name="subject"> 
+            </label>
+
+            <label>
+              Your email:
+              <input class="input-field" type="text" name="_replyto">
+            </label>
+
+             <label>Message
+                <textarea class="input-field" type="text" name="message"></textarea>
+            </label>
+          
+            <!-- other form fields go here -->
+          
+            <button class="submit-btn" type="submit">Send</button>
+          </form>
+
+          <div id="status">
+
+        </div>
+
+        </div>
+    </section>
+
+<div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">Web design</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">for everyday</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">business.</span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+
+     <!--gsap3 from cdn, first one-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" 
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+    <!--jsdelivr.com opcja 2: jquery 3.2.1 -->
+    <script src=https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js></scriptsrc></script>
+    
+    <script src='script.js'></script>
+
+</body>
+</html>
